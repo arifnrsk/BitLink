@@ -34,7 +34,7 @@ To export a debug version of the APK file for Android and run it on an emulator:
 
 Please note that the debug version of the APK is suitable for testing and development purposes. For the release version, which is intended for distribution, you will need to follow the official documentation to generate a signed APK.
 
-That's it! You can now run your BitLink Project locally using Live Server in VS Code and export a debug version of the APK file to run on an Android emulator like BlueStacks.
+That's it! You can now run BitLink Project locally using Live Server in VS Code and export a debug version of the APK file to run on an Android emulator like BlueStacks.
 
 
 
