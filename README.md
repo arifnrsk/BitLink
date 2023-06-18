@@ -24,15 +24,16 @@ To run the BitLink project locally using Live Server in VS Code:
 
 ### Exporting and Running the APK
 To export a debug version of the APK file for Android and run it on an emulator:
-1. Open a terminal or command prompt and navigate to the BitLink project directory.
-2. Run the following command to add the Android platform to the BitLink project: ```cordova platform add android```
-3. Build the BitLink Project by running the following command: ```cordova build android```
-4. Once the build process is complete, navigate to the following directory within the project: `platforms\app\build\outputs\apk`
-5. In the apk directory, you will find the app-debug.apk file. This is the debug version of the APK file that can be installed on an Android emulator.
-6. Start the Android emulator of your choice, such as BlueStacks.
-7. Drag and drop the app-debug.apk file onto the emulator window.
-8. The APK will be installed on the emulator.
-9. Locate the app on the emulator and launch it to run the BitLink Project.
+1. Open the project directory in VS Code.
+2. Open a terminal or command prompt and navigate to the BitLink project directory.
+3. Run the following command to add the Android platform to the BitLink project: ```cordova platform add android```
+4. Build the BitLink Project by running the following command: ```cordova build android```
+5. Once the build process is complete, navigate to the following directory within the project: `platforms\app\build\outputs\apk`
+6. In the apk directory, you will find the app-debug.apk file. This is the debug version of the APK file that can be installed on an Android emulator.
+7. Start the Android emulator of your choice, such as BlueStacks.
+8. Drag and drop the app-debug.apk file onto the emulator window.
+9. The APK will be installed on the emulator.
+10. Locate the app on the emulator and launch it to run the BitLink Project.
 
 Please note that the debug version of the APK is suitable for testing and development purposes. For the release version, which is intended for distribution, you will need to follow the official documentation to generate a signed APK.
 
