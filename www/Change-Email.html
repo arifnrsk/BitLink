@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Change-EmailStyle.css">
+    <title>Profile</title>
+</head>
+<body>
+    <div id="loadingScreen">
+        <div class="loader"></div>
+    </div>
+    <div id="refresh-icon">
+        <img src="https://storage.googleapis.com/bitlink-image-source/fi-br-refresh.svg?GoogleAccessId=firebase-adminsdk-j7592%40bitlink-project.iam.gserviceaccount.com&Expires=16730323200&Signature=AkpiXsFYU4sksurO4QKo3VQEj3Fwu31xyasiJwRDSqxpYhnb3sLWycc3uWgxeE2fB0VfBrBeK%2B5fQ3GtVOczslse38o4uKQVoQNND0hEKySS0BizcWhRczR9JR8sb9punzbBtAT4K5wM8afnh%2BemFgfHK7WtUzXPBX6zlZQxjMjSi67jjSkOAZ9SFeFWQ5QsqJDHzLJedm0Df2qS6xdvkyfMisxjhdiZB5vy5xcBBtFsygmT4P17%2FCpOoidoNvhnBsHREI4gMNnUiXDVkNnVgTq7lBmP6%2Bd4PBJ4dwhUuFoeKf1e9lP08n3Cd9MZSBO3cfzx%2F6ggWWFsfvEpBT%2FPXg%3D%3D" alt="Refresh Icon">
+    </div> 
+
+    <main>
+        <h2>Change Email.</h2>
+        <form id="editProfileForm">
+            <label for="emailBefore">Before</label>
+            <label id="emailBefore"></label>
+    
+            <label for="emailAfter">After</label>
+            <input type="email" name="emailAfter" id="emailAfter">
+            
+            <div id="reauthForm" style="display: none;">
+                <span id="closeReauthForm" style="position: absolute; right: 10px; top: 10px; cursor: pointer;">
+                    <img src="./img/fi-br-cross-small.svg" alt="Close">
+                </span>         
+                <label for="reauthPassword">Password</label>
+                <input type="password" id="reauthPassword">
+                <img id="togglePassword" src="./img/fi-br-eye.png" alt="Toggle Password Visibility">
+                <span id="reauthValidationMessage"></span>
+                <button id="reauthSubmit" type="button">Submit</button>
+            </div>
+    
+            <span id="validationMessage"></span>
+            <button id="save" type="button">Save</button>
+            <a id="cancel" href="./Edit-Profile.html">
+                Back
+            </a>
+        </form>
+        <div id="blurBackground" style="display: none;"></div>
+    </main>
+
+    <span id="message"></span>
+
+    <script type="module" src="./js/Change-EmailScript.js"></script>
+</body>
+</html>

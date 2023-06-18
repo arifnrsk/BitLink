@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Link. Page</title>
+    <link rel="stylesheet" href="./css/LinkStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <div id="loadingScreen">
+        <div class="loader"></div>
+    </div>
+    <div id="refresh-icon">
+        <img src="https://storage.googleapis.com/bitlink-image-source/fi-br-refresh.svg?GoogleAccessId=firebase-adminsdk-j7592%40bitlink-project.iam.gserviceaccount.com&Expires=16730323200&Signature=AkpiXsFYU4sksurO4QKo3VQEj3Fwu31xyasiJwRDSqxpYhnb3sLWycc3uWgxeE2fB0VfBrBeK%2B5fQ3GtVOczslse38o4uKQVoQNND0hEKySS0BizcWhRczR9JR8sb9punzbBtAT4K5wM8afnh%2BemFgfHK7WtUzXPBX6zlZQxjMjSi67jjSkOAZ9SFeFWQ5QsqJDHzLJedm0Df2qS6xdvkyfMisxjhdiZB5vy5xcBBtFsygmT4P17%2FCpOoidoNvhnBsHREI4gMNnUiXDVkNnVgTq7lBmP6%2Bd4PBJ4dwhUuFoeKf1e9lP08n3Cd9MZSBO3cfzx%2F6ggWWFsfvEpBT%2FPXg%3D%3D" alt="Refresh Icon">
+    </div>
+
+    <main>
+        <div id="popup-form" class="popup-form">
+            <div class="form-container">
+                <button id="close-button" class="close-button">
+                    <img src="./img/fi-br-cross-small.svg" alt="Close">
+                </button>
+                <form id="link-form">
+                    <div class="form-field">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="link">Link</label>
+                        <input type="text" id="link" name="link" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="thumbnail">Thumbnail</label>
+                        <button id="upload-button" class="upload-button" type="button">Upload your files</button>
+                        <input type="file" id="thumbnail" name="thumbnail" accept="image/*" hidden>
+                    </div>
+                    
+                    <span id="validationMessage"></span>
+                    <input id="submit" type="submit" value="Submit" class="button">
+                </form>
+            </div>
+        </div>
+
+        <div class="title-section">
+            <div id="search-bar-container">
+                <input type="text" id="search-input" placeholder="Search...">
+                <img src="./img/fi-br-search.svg" alt="Search" id="search-icon">
+            </div>
+
+            <input type="file" id="avatar-input" style="display: none">
+            <div id="avatar-container">
+                <img src="https://storage.googleapis.com/bitlink-image-source/fi-br-upload.svg?GoogleAccessId=firebase-adminsdk-j7592%40bitlink-project.iam.gserviceaccount.com&Expires=16730323200&Signature=LbA8xeOaLGwEXzXFT21FZNSV5KSrgLFf9hHXRypt8hSZzGr%2BIkJxVE38c4u4JR73smYKRg0Q0q2vYFSzdareeS%2BRWkauss21MPLcogYqCVumIB9%2FKCCqBxfiWSmlMNZRXfONKbtLh9ddXmhCXVGMH5eGp%2FN5qeARiriR%2FB%2FuMEdmKJy6Cd7%2F3a4DnKip6r%2F4%2FwyyP3VVOmVsQl5e%2FOznLCH9xIsMry8wsFsqQ57WrqMZ2CjpnWxhh6YRnBsjS4YwF%2FjHNmRt4py9Q8kMG6XuvtXg4Xb7lF1Rrig7vs0m%2FgPpZgI9BHOg112adX%2Btc8U507PkZ8%2Bf209OJjAbCqioSA%3D%3D" alt="Avatar" id="avatar-image">
+            </div>
+    
+            <div id="title-page">
+                <input id="title-label" type="text" value="Click to edit the Title.">
+            </div>
+        </div>
+
+        <div class="link-container"></div>
+        
+        <div class="buttons">
+            <a href="#" id="addButton" class="add-button">
+                <img src="./img/fi-rr-add.svg" alt="Add">
+            </a>
+        </div>
+    </main>
+    
+    <span id="message"></span>
+
+    <nav class="bottom-navbar">
+        <a href="./Short.html" id="shortButton">
+            <img id="shortIcon" src="https://storage.googleapis.com/bitlink-image-source/Short.%20icon.svg?GoogleAccessId=firebase-adminsdk-j7592%40bitlink-project.iam.gserviceaccount.com&Expires=16730323200&Signature=RfayIRFa9ipuV7dCYsYjrfmgGx8XLxTPi7uT9YOkcKf5%2B56cKdF4VWECdNKq7qmhUtg3nAgznGJkUAgClMdLNrAfJbUibPikgvV3G2Ij0rK0Lz%2F1RR6rKUvdkeAmMdH5SKEAMEMqjFmYATn1YvqYPyehxEr7fBqwV7enqnURLNrXKtYcuoqtOByuaZb%2B%2BMzAjRYVUiZrBA9twWiVCzhr1OYU7ZJHu4U5yPyeZgmuSOLw1rxyQK2AgRTesG0z713WPWdx8H1lP9zjfZwnzaU1URk7A2vlc%2BPZBMewa8g9DGHzL1gtbJd0OPf1%2FkwWU3%2Fl4gvlNWdh6iGztKeWuMz6Wg%3D%3D
+            " alt="Short.">
+        </a>
+        <a href="./Preview.html" id="previewButton">
+            <img id="previewIcon" src="https://storage.googleapis.com/bitlink-image-source/Preview.%20icon.svg?GoogleAccessId=firebase-adminsdk-j7592%40bitlink-project.iam.gserviceaccount.com&Expires=16730323200&Signature=Gx16eSarB0P9x8hZ48R0NM8g6zEB8EIXctwniNUZ32vG1QRuiF5bl6f2pvotZUZA6EjriGuWjijMNHKxnj8oXDadL10Hdqm1vm%2FCbXtRYWFfjaIu%2FFBW3Kqfq6M12zsHdTIBh3rrGMT%2FCk6zmQ2j%2FX2bzH3MLHGjh8u4B655%2BBMUCwiP2hdEibugEHnt2GlCstrL%2BUwSdAVW9kXTZS0%2F6u2l%2FPJgoxqXhkYY2HUFWAd54dS67AmANX8Eqj9e3Cwl2twkipB7fIC5g5ZfmNaRoB30Ihn8H2Sj2yfajsfoGEDn66ABZSHC5Hd%2BBMOuSSfU6Hwq4zGnHkJF2ibbiNeMNQ%3D%3D" alt="Preview">
+        </a>
+        <a href="./Link.html" id="linkButton">
+            <img id="linkIcon" src="https://storage.googleapis.com/bitlink-image-source/Link.%20icon.svg?GoogleAccessId=firebase-adminsdk-j7592%40bitlink-project.iam.gserviceaccount.com&Expires=16730323200&Signature=WqteHYCV33Rrca4hQTKkr1%2Bpm%2FVth6B8PwcYA9Y1gAdovgmqo9qfHIFD%2FK6sZEus2xC4mNgpRFzxPAwEgLHtev06Iq8T0c2%2BeIzodXj4UAPwOWDBMaZ3sB3nNfnyobNdhuUh5L0F1D6woK4b%2F9rhcMgwu4HI52UXMKb14fnauRZAhA%2FPmlP3FQNhuo7S0TT8InODKWCkcUWiejULC0qmDvbT5sNFvKZIgRcW1XyLPZCpbKo0tIbKLlh0oF%2FrplhAUsdGV2XXaTnKHC9ZFQOiIkAFk9TMGldMSiMw19GGy9Ls0cBbpXmhszyDJfLTqu4Lee%2B9urEm%2FzvJObjZKanPvg%3D%3D" alt="Link.">
+        </a>        
+        <a id="profileButton" href="./Profile.html">
+            <img id="profileAvatar" src="https://storage.googleapis.com/bitlink-image-source/Profile.%20icon.svg?GoogleAccessId=firebase-adminsdk-j7592%40bitlink-project.iam.gserviceaccount.com&Expires=16730323200&Signature=mZGNRePbxT5DuuMD8fd2JwicUqMfiyQarvMO5qDZlmJpCB8pOpUdLqoar%2FjM5zTduinzqVT1OujQY7AeInpTltCHKhvBZ6xbD8kRP%2F%2FKr%2FROEVMlX9sg%2FB3vnluSHkGO8EbZrS7pfTIZdH%2FKRjxsfWtkbsn6kPW9OeuvaD95Q1xMOryILsOakfuVi%2BNY7nO41%2F6ud1dh8icjlhEIdzFP2zpGhxTYH8v7%2BMCAWlbfUZGgQVj9S8nLC605sHpbzIF0M7tLVLZuIaJINWyCynFrkBv4FzVVJXBrE8CvRnnrv7Jsh6p3HHDSzRhfajZnrqcPaOPojg0Pn229mSeZG1gV7w%3D%3D" alt="Profile">
+        </a>
+    </nav>
+
+    <script type="module" src="./js/LinkScript.js"></script>
+    <script type="module" src="./js/LinkScriptAvatarInput.js"></script>
+
+</body>
+</html>

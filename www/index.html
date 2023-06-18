@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In.</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div id="loadingScreen">
+        <div class="loader"></div>
+    </div>
+    <div id="refresh-icon">
+        <img src="https://storage.googleapis.com/bitlink-image-source/fi-br-refresh.svg?GoogleAccessId=firebase-adminsdk-j7592%40bitlink-project.iam.gserviceaccount.com&Expires=16730323200&Signature=AkpiXsFYU4sksurO4QKo3VQEj3Fwu31xyasiJwRDSqxpYhnb3sLWycc3uWgxeE2fB0VfBrBeK%2B5fQ3GtVOczslse38o4uKQVoQNND0hEKySS0BizcWhRczR9JR8sb9punzbBtAT4K5wM8afnh%2BemFgfHK7WtUzXPBX6zlZQxjMjSi67jjSkOAZ9SFeFWQ5QsqJDHzLJedm0Df2qS6xdvkyfMisxjhdiZB5vy5xcBBtFsygmT4P17%2FCpOoidoNvhnBsHREI4gMNnUiXDVkNnVgTq7lBmP6%2Bd4PBJ4dwhUuFoeKf1e9lP08n3Cd9MZSBO3cfzx%2F6ggWWFsfvEpBT%2FPXg%3D%3D" alt="Refresh Icon">
+    </div> 
+    
+    <main id="loginPage" class="page-transition">
+        <h1>Log In.</h1>
+        <form id="loginForm">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+
+            <label for="password">Password</label>
+            <div class="password-container">
+                <input type="password" name="password" id="password">
+                <img id="togglePassword" src="./img/fi-br-eye.png" alt="Toggle Password Visibility">
+            </div>
+
+            <span id="validationMessage"></span>
+            <input id="signIn" type="submit" value="Log In">
+        </form>
+
+        <h6>Forgot password? <a id="resetPasswordLink" href="#">Reset Password</a></h6>
+        <h6>Don't have an account yet? <a href="./SignUp.html">Sign up for free!</a></h6>
+    </main>
+
+    <div id="resetPasswordForm" style="display: none;">
+        <span id="closeResetPasswordForm" style="position: absolute; right: 10px; top: 10px; cursor: pointer;">
+            <img src="./img/fi-br-cross-small.svg" alt="Close">
+        </span>         
+        <label for="resetPasswordEmail">Email</label>
+        <input type="email" id="resetPasswordEmail">
+        <span id="resetPasswordValidationMessage"></span>
+        <button id="resetPasswordSubmit" type="button">Submit</button>
+    </div>
+
+    <span id="message"></span>
+    <div id="blurBackground" style="display: none;"></div>
+
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
