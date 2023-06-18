@@ -1,0 +1,17 @@
+{
+    "name": "getlinks",
+    "version": "1.0.0",
+    "description": "Get links API",
+    "main": "get_links.js",
+    "scripts": {
+        "start": "node get_links.js"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.18.2",
+        "firebase-admin": "^11.9.0"
+    },
+    "engines": {
+        "node": "18.x"
+    }
+}
