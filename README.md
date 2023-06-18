@@ -16,7 +16,7 @@ Before running the BitLink project locally or exporting the APK, make sure you h
 
 ### Running the BitLink Project Locally
 To run the BitLink project locally using Live Server in VS Code:
-1. Open the project directory in VS Code.
+1. Open the Cordova project directory using the VS Code created earlier.
 2. Install the Live Server extension in VS Code.
 3. Open the www directory.
 4. Right-click the index.html file and select "Open with Live Server" from the context menu.
@@ -24,8 +24,7 @@ To run the BitLink project locally using Live Server in VS Code:
 
 ### Exporting and Running the APK
 To export a debug version of the APK file for Android and run it on an emulator:
-1. Open the project directory in VS Code.
-2. Open a terminal or command prompt and navigate to the BitLink project directory.
+1. Open the Cordova project directory using the VS Code created earlier, or open a terminal or command prompt and navigate to the Cordova project directory.
 3. Run the following command to add the Android platform to the BitLink project: ```cordova platform add android```
 4. Build the BitLink Project by running the following command: ```cordova build android```
 5. Once the build process is complete, navigate to the following directory within the project: `platforms\app\build\outputs\apk`
