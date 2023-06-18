@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/ProfileStyle.css">
+    <title>Profile</title>
+</head>
+</body>
+    <div id="loadingScreen">
+        <div class="loader"></div>
+    </div>
+    <div id="refresh-icon">
+        <img src="https://storage.googleapis.com/bitlink-image-source/fi-br-refresh.svg?GoogleAccessId=firebase-adminsdk-j7592%40bitlink-project.iam.gserviceaccount.com&Expires=16730323200&Signature=AkpiXsFYU4sksurO4QKo3VQEj3Fwu31xyasiJwRDSqxpYhnb3sLWycc3uWgxeE2fB0VfBrBeK%2B5fQ3GtVOczslse38o4uKQVoQNND0hEKySS0BizcWhRczR9JR8sb9punzbBtAT4K5wM8afnh%2BemFgfHK7WtUzXPBX6zlZQxjMjSi67jjSkOAZ9SFeFWQ5QsqJDHzLJedm0Df2qS6xdvkyfMisxjhdiZB5vy5xcBBtFsygmT4P17%2FCpOoidoNvhnBsHREI4gMNnUiXDVkNnVgTq7lBmP6%2Bd4PBJ4dwhUuFoeKf1e9lP08n3Cd9MZSBO3cfzx%2F6ggWWFsfvEpBT%2FPXg%3D%3D" alt="Refresh Icon">
+    </div> 
+    
+    <main>
+        <button id="backButton" onclick="window.location.href='./Link.html'">
+            <img src="./img/fi-br-cross.svg" alt="Back">
+        </button>
+        
+        <input type="file" id="avatar-input" style="display: none">
+        <div id="avatar-container">
+            <img src="./img/Blank avatar - No edit.png" alt="Avatar" id="avatar-image">
+        </div>
+
+        <form id="profileForm">
+            <label>Username</label>
+            <label id="username" class="username-email-password"></label>
+
+            <label>Email</label>
+            <label id="email" class="username-email-password"></label>
+
+            <a id="edit" href="./Edit-Profile.html">
+                Edit
+            </a>
+            <a id="logout" href="#" onclick="signOut();">
+                Logout
+            </a>
+        </form>
+    </main>
+    
+    <span id="message"></span>
+
+    <script type="module" src="./js/ProfileScript.js"></script>
+</body>
+</html>

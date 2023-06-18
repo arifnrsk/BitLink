@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up.</title>
+    <link rel="stylesheet" href="./css/SignUpStyle.css">
+</head>
+<body>
+    <main id="mainSignupPage">
+        <div id="signupPage" class="page-transition">
+            <!-- Konten halaman sign up -->
+            <h1>Sign Up.</h1>
+            <form id="signupForm">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+
+                <label for="password">Password</label>
+                <div class="password-container">
+                    <input type="password" name="password" id="password">
+                    <img id="togglePassword" src="./img/fi-br-eye.png" alt="Toggle Password Visibility">
+                </div>
+                
+                <span id="validationMessage"></span>
+                <input id="signUp" type="submit" value="Sign Up">
+            </form>
+
+            <!-- <h4>OR</h4> -->
+
+            <h6>Already have an account? <a href="./index.html">Log In</a></h6>
+        </div>
+    </main>
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.0/firebase.js"></script> -->
+    <script type="module" src="./js/SignUpScript.js"></script>
+</body>
+</html>
