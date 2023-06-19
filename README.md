@@ -13,7 +13,7 @@ Before running the BitLink project locally or exporting the APK, make sure you f
 - [Cordova](https://cordova.apache.org/) - Inside the BitLink Project folder, install the Cordova CLI by running the following command in the terminal or command prompt: ```npm install -g cordova```
 - Next, create the Cordova project. ```cordova create BitLink com.bitlinkApp BitLink``` If you change ```com.bitlinkApp``` don't forget to change ```widget id="com.bitlinkApp"``` on config.xml
 - Clone this repository to your computer in any directories ```git clone https://github.com/arifnrsk/BitLink``` *we suggest in a different directory from the BitLink project folder*
-- Copy the contents of the "www" folder from the cloned repository into the "www" folder of your Cordova project that you created before. Replace any existing files if prompted.
+- Copy the contents of the "www" folder and config.xml file from the cloned repository into the Cordova Project folder that you created before. Replace any existing files if prompted.
 
 ### Running the BitLink Project Locally
 To run the BitLink project locally using Live Server in VS Code:
