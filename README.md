@@ -3,18 +3,18 @@ BitLink is a simple application that combines URL management and URL shortening 
 
 This project is developed as part of the COMP6100001-Software Engineering Project course at Binus University. The project is built using a serverless architecture and leverages the Google Cloud Platform services. However, please note that the project utilizes a trial account, and the trial duration will `expire on August 17th, 2023`. Therefore, the services will be shut down after that date.
 
-This guide provides instructions on how to run a BitLink Project locally using Live Server in VS Code and how to export a debug version of the APK file for Android.
+This guide provides instructions on running a BitLink Project locally using Live Server in VS Code and exporting a debug version of the APK file for Android.
 
 ### **Prerequisites**
 Before running the BitLink project locally or exporting the APK, make sure you follow these steps:
-- Create the BitLink Project folder.
-- [Node.js](https://nodejs.org/en) - Node.js is required to run the Cordova CLI. You can check your npm version using ```npm --version```
-- [Emulator](https://www.bluestacks.com/id/index.html) - Install an Android emulator like BlueStacks to run the APK on your computer.
-- If you just started using Cordova, please read **How to make Cordova work** on your device in this readme.
-- [Cordova](https://cordova.apache.org/) - Inside the BitLink Project folder, install the Cordova CLI by running the following command in the terminal or command prompt: ```npm install -g cordova```
-- Next, create the Cordova project. ```cordova create BitLink com.bitlinkApp BitLink``` If you change ```com.bitlinkApp``` don't forget to change ```widget id="com.bitlinkApp"``` on config.xml
-- Clone this repository to your computer in any directories ```git clone https://github.com/arifnrsk/BitLink``` *we suggest in a different directory from the BitLink project folder*. If you have trouble cloning the repository, you can easily download a zip of this repository.
-- Copy the contents of the "www" folder and config.xml file from the cloned repository into the Cordova Project folder that you created before. Replace any existing files if prompted.
+1. Create the BitLink Project folder.
+2. [Node.js](https://nodejs.org/en) - Node.js is required to run the Cordova CLI. You can check your npm version using ```npm --version```
+3. [Emulator](https://www.bluestacks.com/id/index.html) - Install an Android emulator like BlueStacks to run the APK on your computer.
+4. If you just started using Cordova, please read **How to make Cordova work** on your device in this readme.
+5. [Cordova](https://cordova.apache.org/) - Inside the BitLink Project folder, install the Cordova CLI by running the following command in the terminal or command prompt: ```npm install -g cordova```
+6. Next, create the Cordova project. ```cordova create BitLink com.bitlinkApp BitLink``` If you change ```com.bitlinkApp``` don't forget to change ```widget id="com.bitlinkApp"``` on config.xml
+7. Clone this repository to your computer in any directories ```git clone https://github.com/arifnrsk/BitLink``` *we suggest in a different directory from the BitLink project folder*. If you have trouble cloning the repository, you can easily download a zip of this repository.
+8. Copy the contents of the "www" folder and config.xml file from the cloned repository into the Cordova Project folder that you created before. Replace any existing files if prompted.
 
 ### How to make Cordova work
 1. [JDK (Java Development Kit)](https://www.oracle.com/java/technologies/downloads/#java11) - Install JDK (Java Development Kit) because we develop this project for Android platform.
