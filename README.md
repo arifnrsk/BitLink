@@ -6,12 +6,13 @@ This project is developed as part of the COMP6100001-Software Engineering Projec
 This guide provides instructions on how to run a BitLink Project locally using Live Server in VS Code and how to export a debug version of the APK file for Android.
 
 ### **Prerequisites**
-Before running the BitLink project locally or exporting the APK, make sure you have the following software installed:
+Before running the BitLink project locally or exporting the APK, make sure you follow these steps:
+- Create the BitLink Project folder.
 - [Node.js](https://nodejs.org/en) - Node.js is required to run the Cordova CLI.
-- [Cordova](https://cordova.apache.org/) -  Install the Cordova CLI by running the following command in the terminal or command prompt: ```npm install -g cordova```
 - [Emulator](https://www.bluestacks.com/id/index.html) - Install an Android emulator like BlueStacks to run the APK on your computer.
-- Create a Cordova Project. Navigate to the desired directory where you want to create the Cordova project. ```cordova create BitLink com.bitlinkApp BitLink``` If you change ```com.bitlinkApp``` don't forget to change ```widget id="com.bitlinkApp"``` on config.xml
-- Clone this repository to your computer in any directories ```git clone https://github.com/arifnrsk/BitLink``` *we suggest in a different directory from the Cordova project*
+- [Cordova](https://cordova.apache.org/) - Inside the BitLink Project folder, install the Cordova CLI by running the following command in the terminal or command prompt: ```npm install -g cordova```
+- Next, create the Cordova project. ```cordova create BitLink com.bitlinkApp BitLink``` If you change ```com.bitlinkApp``` don't forget to change ```widget id="com.bitlinkApp"``` on config.xml
+- Clone this repository to your computer in any directories ```git clone https://github.com/arifnrsk/BitLink``` *we suggest in a different directory from the BitLink project folder*
 - Copy the contents of the "www" folder from the cloned repository into the "www" folder of your Cordova project that you created before. Replace any existing files if prompted.
 
 ### Running the BitLink Project Locally
