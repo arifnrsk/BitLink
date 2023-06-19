@@ -4,6 +4,7 @@ BitLink is a simple application that combines URL management and URL shortening 
 This project is developed as part of the COMP6100001-Software Engineering Project course at Binus University. The project is built using a serverless architecture and leverages the Google Cloud Platform services. However, please note that the project utilizes a trial account, and the trial duration will `expire on August 17th, 2023`. Therefore, the services will be shut down after that date.
 
 This guide provides instructions on running a BitLink Project locally using Live Server in VS Code and exporting a debug version of the APK file for Android.
+
 *Important: We suggest you ask chatGPT if you encounter any error while trying to run and export this project to get a faster solution :)*
 
 ### **Prerequisites**
