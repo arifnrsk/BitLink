@@ -8,12 +8,19 @@ This guide provides instructions on how to run a BitLink Project locally using L
 ### **Prerequisites**
 Before running the BitLink project locally or exporting the APK, make sure you follow these steps:
 - Create the BitLink Project folder.
-- [Node.js](https://nodejs.org/en) - Node.js is required to run the Cordova CLI.
+- [Node.js](https://nodejs.org/en) - Node.js is required to run the Cordova CLI. You can check your npm version using ```npm --version```
 - [Emulator](https://www.bluestacks.com/id/index.html) - Install an Android emulator like BlueStacks to run the APK on your computer.
+- If you just started using Cordova, please read **How to make Cordova work** on your device in this readme.
 - [Cordova](https://cordova.apache.org/) - Inside the BitLink Project folder, install the Cordova CLI by running the following command in the terminal or command prompt: ```npm install -g cordova```
 - Next, create the Cordova project. ```cordova create BitLink com.bitlinkApp BitLink``` If you change ```com.bitlinkApp``` don't forget to change ```widget id="com.bitlinkApp"``` on config.xml
 - Clone this repository to your computer in any directories ```git clone https://github.com/arifnrsk/BitLink``` *we suggest in a different directory from the BitLink project folder*. If you have trouble cloning the repository, you can easily download a zip of this repository.
 - Copy the contents of the "www" folder and config.xml file from the cloned repository into the Cordova Project folder that you created before. Replace any existing files if prompted.
+
+### How to make Cordova work
+1. [JDK (Java Development Kit)](https://www.oracle.com/java/technologies/downloads/#java11) - Install JDK (Java Development Kit) because we develop this project for Android platform.
+2. Configuring Environment Variables: After installing the JDK, you need to set environment variables to ensure Cordova can access the necessary tools and dependencies. Add the JDK bin path to your operating system's "Path" environment variable.
+3. [Android SDK](https://developer.android.com/studio#downloads) - To build Cordova Project for the Android platform, you need to install the Android SDK. Once the installation is complete, open Android Studio and go to "SDK Manager". Check the "Android SDK Platform" and "Google APIs" options that correspond to the Android version you want to target. Click "Apply" or "OK" to install the SDK.
+4. Configure Android Environment Variables: After installing the Android SDK, you need to set environment variables to ensure Cordova can access the necessary Android tools and dependencies. Add the Android SDK bin path to your operating system's "Path" environment variable.
 
 ### Running the BitLink Project Locally
 To run the BitLink project locally using Live Server in VS Code:
