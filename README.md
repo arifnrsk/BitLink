@@ -44,7 +44,7 @@ To export a debug version of the APK file for Android and run it on an emulator:
 9. The APK will be installed on the emulator.
 10. Locate the app on the emulator and launch it to run the BitLink Project.
 
-[Tutorial Video](https://drive.google.com/file/d/1S1xFZI6Pa6U4MHJ7Vobo13SNUMJJuQlp/view?usp=sharing) - If the steps above are unclear enough, you can watch this video tutorial. Hope it helps!
+[Tutorial Video](https://youtu.be/4THR02hJ680) - If the steps above are unclear enough, you can watch this tutorial. Hope it helps!
 
 Please note that the debug version of the APK is suitable for testing and development purposes. For the release version, which is intended for distribution, you will need to follow the official documentation to generate a signed APK.
 
