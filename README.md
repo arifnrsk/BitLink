@@ -5,7 +5,7 @@ This project is developed as part of the COMP6100001-Software Engineering Projec
 
 This guide provides instructions on running a BitLink Project locally using Live Server in VS Code and exporting a debug version of the APK file for Android.
 
-*Important: We suggest you ask chatGPT if you encounter any error while trying to run and export this project to get a faster solution :)*
+*Important: We suggest you ask chatGPT if you encounter any error while trying to run or export this project to get a faster solution :)*
 
 ### **Prerequisites**
 Before running the BitLink project locally or exporting the APK, make sure you follow these steps:
