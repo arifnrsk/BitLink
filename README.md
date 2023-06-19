@@ -21,6 +21,7 @@ Before running the BitLink project locally or exporting the APK, make sure you f
 2. Configuring Environment Variables: After installing the JDK, you need to set environment variables to ensure Cordova can access the necessary tools and dependencies. Add the JDK bin path to your operating system's "Path" environment variable.
 3. [Android SDK](https://developer.android.com/studio#downloads) - To build Cordova Project for the Android platform, you need to install the Android SDK. Once the installation is complete, open Android Studio and go to "SDK Manager". Check the "Android SDK Platform" and "Google APIs" options that correspond to the Android version you want to target. Click "Apply" or "OK" to install the SDK.
 4. Configure Android Environment Variables: After installing the Android SDK, you need to set environment variables to ensure Cordova can access the necessary Android tools and dependencies. Add the Android SDK bin path to your operating system's "Path" environment variable.
+5. After that, you can continue to Prerequisites step 5.
 
 ### Running the BitLink Project Locally
 To run the BitLink project locally using Live Server in VS Code:
