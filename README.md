@@ -12,7 +12,7 @@ Before running the BitLink project locally or exporting the APK, make sure you f
 - [Emulator](https://www.bluestacks.com/id/index.html) - Install an Android emulator like BlueStacks to run the APK on your computer.
 - [Cordova](https://cordova.apache.org/) - Inside the BitLink Project folder, install the Cordova CLI by running the following command in the terminal or command prompt: ```npm install -g cordova```
 - Next, create the Cordova project. ```cordova create BitLink com.bitlinkApp BitLink``` If you change ```com.bitlinkApp``` don't forget to change ```widget id="com.bitlinkApp"``` on config.xml
-- Clone this repository to your computer in any directories ```git clone https://github.com/arifnrsk/BitLink``` *we suggest in a different directory from the BitLink project folder*
+- Clone this repository to your computer in any directories ```git clone https://github.com/arifnrsk/BitLink``` *we suggest in a different directory from the BitLink project folder*. If you have trouble cloning the repository, you can easily download a zip of this repository.
 - Copy the contents of the "www" folder and config.xml file from the cloned repository into the Cordova Project folder that you created before. Replace any existing files if prompted.
 
 ### Running the BitLink Project Locally
