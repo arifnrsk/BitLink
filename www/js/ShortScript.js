@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
           
                 for (const key in data) {
                     const linkData = data[key];
-          
+
                     // Pembuatan element html untuk link title, url, dan short link
                     const linkDiv = document.createElement('div');
                     linkDiv.className = "short-link-div";
@@ -211,8 +211,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                     fetch("https://add-short-luylauepla-et.a.run.app/check_short_link", {
                                         method: 'POST',
                                         headers: {
-                                            'Content-Type': 'application/json',
-                                            'Authorization': 'Bearer ' + token 
+                                            'Content-Type': 'application/json'
                                         },
                                         body: JSON.stringify({ shortLink: newShortLink }),
                                     })
@@ -371,8 +370,7 @@ document.getElementById('link-form').addEventListener('submit', async (e) => {
         fetch("https://add-short-luylauepla-et.a.run.app/check_short_link", {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
-                'Authorization': 'Bearer ' + token 
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify({ shortLink }),
         })
