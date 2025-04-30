@@ -1,8 +1,6 @@
 # **Running a BitLink Project Locally and Exporting an APK**
 BitLink is a simple application that combines URL management and URL shortening systems into one application. Its features are focused on promoting multiple links on various social media platforms and analyzing the feedback obtained, which can be used as a report. Besides being able to be used generally, BitLink can also serve business purposes.
 
-<iframe src="https://drive.google.com/file/d/1RMTBVYkkOA00TxdkQiS0yeAMqpDGnajN/view?usp=sharing" width="640" height="480" allow="autoplay"></iframe>
-
 This project is developed as part of the COMP6100001-Software Engineering Project course at Binus University. The project is built using a serverless architecture and leverages the Google Cloud Platform services. However, please note that the project utilizes a trial account, and the trial duration will `expire on August 17th, 2023`. Therefore, the services will be shut down after that date.
 
 This guide provides instructions on running a BitLink Project locally using Live Server in VS Code and exporting a debug version of the APK file for Android.
